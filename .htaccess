@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^about$ /About_me/about_me.html [L]
+RewriteRule ^Home$ index.html [L]
