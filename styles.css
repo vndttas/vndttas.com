@@ -63,26 +63,48 @@
     font-size: auto;
 }
 
-.recent.work {
-    
+
+
+.recent-work {
     position: relative;
     text-align: center;
     text-decoration: none;
     color: whitesmoke;
-}
-
-.artwork {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 5px;
-    margin: 0 25%;
+    overflow: hidden; /* Ensure the container clips the content */
   }
-
+  
+  .artwork-container {
+    width: 300px; /* Set a fixed width for the container */
+    margin: 0 auto;
+    overflow: hidden; /* Enable horizontal scrolling */
+  }
+  
+  .artwork {
+    display: flex;
+    animation: scroll-left 10s linear infinite; /* Animation properties */
+  }
+  
   .artwork img {
-    width: 100%;
+    width: 300px; /* Set a fixed width for the images */
     height: auto;
+    object-fit: contain;
+    margin-right: 5px; /* Add a 5px right margin between the images */
   }
-
+  
+  .artwork img:last-child {
+    margin-right: 0; /* Remove the margin from the last image */
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0); /* Start position */
+    }
+    100% {
+      transform: translateX(-305%); /* End position */
+    }
+  }
+  
+  
   @media (max-width: 768px) {
     .artwork {
       margin: 0 auto;
@@ -161,4 +183,5 @@ a[href="https://www.instagram.com/maximumtheultimate/"] {
     text-align: center;
     padding: 10px 0;
     color: whitesmoke;
+    z-index: 9999; /* Ensure the element is above other content */
   }
