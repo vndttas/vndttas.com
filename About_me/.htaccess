@@ -1,2 +1,0 @@
-RewriteEngine On
-RewriteRule ^about$ /About_me/about_me.html [L]
