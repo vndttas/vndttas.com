@@ -1,0 +1,115 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+.background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.About {
+    text-align: center;
+  }
+  
+  .About img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20%;
+  }
+  
+  a[href="https://www.instagram.com/maximumtheultimate/"] {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a[href="https://www.instagram.com/maximumtheultimate/"]:hover {
+    font-weight: bold;
+  }
+  
+  
+
+
+
+
+
+
+  
+.logoapp {
+    position: relative;
+}
+.logoapp img {
+    width: 64px;
+    height: auto;
+}
+
+
+
+.equipment {
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button a {
+  text-decoration: none;
+  color: whitesmoke;
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.button a:hover {
+  font-weight: bold;
+}
+
+
+.button {
+display: flex;
+justify-content: space-around;
+}
+
+
+
+
+
+
+.bottom {
+  left: 0;
+  bottom: 25px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: whitesmoke;
+  z-index: 9999; 
+}
+
+
+.copyright {
+padding-top: 50px;
+}
