@@ -1,19 +1,4 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
@@ -35,7 +20,7 @@
   ), hsl(240, 2%, 13%);
   --bg-gradient-blue-purple-1: linear-gradient(
     to bottom right, 
-    hsl(240, 100%, 71%) 0%, 
+    hsl(24, 100%, 71%) 0%, 
     hsla(240, 100%, 69%, 0) 50%
   );
   --bg-gradient-blue-purple-2: linear-gradient(
@@ -50,8 +35,8 @@
   );
   --text-gradient-blue-purple: linear-gradient(
     to right, 
-    hsl(240, 100%, 72%), 
-    hsl(240, 100%, 68%)
+    hsl(24, 100%, 71%), 
+    hsl(24, 100%, 68%)
   );
 
   /* solid */
@@ -63,8 +48,8 @@
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
-  --blue-purple: hsl(240, 100%, 72%);
-  --vegas-gold: hsl(240, 100%, 72%); /* Changed to blue-purple */
+  --blue-purple: hsl(24, 100%, 72%);
+  --vegas-gold: hsl(24, 100%, 72%); 
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -331,9 +316,9 @@ main {
   gap: 15px;
 }
 
-.avatar-box {
-  background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+
+.avatar-box img {
+  border-radius: 15%;
 }
 
 .info-content .name {
@@ -444,7 +429,8 @@ main {
 }
 
 
-.social-item .social-link:hover { color: var(--light-gray); }
+.social-item .social-link:hover { color: hsl(24, 100%, 68%); }
+
 
 
 
@@ -1001,8 +987,6 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
-
 .project-item-icon-box {
   --scale: 0.8;
 
@@ -1466,37 +1450,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
-
-  .modal-container { padding: 20px; }
-
-  .testimonials-modal {
-    display: flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    gap: 25px;
-    padding: 30px;
-    border-radius: 20px;
-  }
-
-  .modal-img-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .modal-avatar-box {
-    border-radius: 18px;
-    margin-bottom: 0;
-  }
-
-  .modal-avatar-box img { width: 65px; }
-
-  .modal-img-wrapper > img {
-    display: block;
-    flex-grow: 1;
-    width: 35px;
-  }
 
   /* clients */
 
@@ -1526,18 +1479,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .skills-item:not(:last-child) { margin-bottom: 25px; }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG
-   */
-
-  .project-img, .blog-banner-box { border-radius: 16px; }
-
-  .blog-posts-list { gap: 30px; }
-
-  .blog-content { padding: 25px; }
 
 
 
